@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - SmartIoT</title>
+  <link rel="stylesheet" href="assets/dashboard-style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <h1>Dashboard</h1>
+    <p class="subtitle">Monitor & Kontrol Turbin Angin</p>
+
+    <section>
+      <h2>Data Sensor</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Kecepatan Angin</h3>
+          <p id="kecepatan angin">-- m/s</p>
+        </div>
+        <div class="card">
+          <h3>Arah Angin</h3>
+          <p id="arah angin">-- °</p>
+        </div>
+        <div class="card">
+          <h3>Kecepatan Rotor</h3>
+          <p id="kecepatan rotor">-- RPM</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Kontrol Sistem</h2>
+      <div class="controls">
+        <button id="led1" onclick="toggleLED(1)">LED 1 OFF</button>
+        <button id="led2" onclick="toggleLED(2)">LED 2 OFF</button>
+        <button id="brake" onclick="toggleBrake()">REM OFF</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Log Aktivitas</h2>
+      <div class="log" id="activity-log">
+        <p>Sistem siap...</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
